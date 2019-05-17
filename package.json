@@ -10,7 +10,6 @@
     "tree-sitter",
     "legesher"
   ],
-  "homepage": "https://atom.github.io/language-python",
   "repository": {
     "type": "git",
     "url": "https://github.com/legesher/language-legesher-python.git"
