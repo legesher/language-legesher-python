@@ -1,11 +1,11 @@
 {
   "name": "language-legesher-python",
-  "version": "0.53.3",
+  "version": "0.0.0",
   "engines": {
     "atom": "*",
     "node": "*"
   },
-  "description": "Python language support in Atom",
+  "description": "Python language support in Atom for the Legesher project",
   "keywords": [
     "tree-sitter",
     "legesher"
