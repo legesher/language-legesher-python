@@ -1,5 +1,5 @@
 {
-  "name": "language-python",
+  "name": "language-legesher-python",
   "version": "0.53.1",
   "engines": {
     "atom": "*",
@@ -7,20 +7,21 @@
   },
   "description": "Python language support in Atom",
   "keywords": [
-    "tree-sitter"
+    "tree-sitter",
+    "legesher"
   ],
   "homepage": "https://atom.github.io/language-python",
   "repository": {
     "type": "git",
-    "url": "https://github.com/atom/language-python.git"
+    "url": "https://github.com/legesher/language-legesher-python.git"
   },
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/atom/language-python/issues"
+    "url": "https://github.com/legesher/language-legesher-python/issues"
   },
   "dependencies": {
     "atom-grammar-test": "^0.6.4",
-    "tree-sitter-python": "^0.14.0"
+    "tree-sitter-legesher-python": "^0.14.2"
   },
   "devDependencies": {
     "coffeelint": "^1.10.1"

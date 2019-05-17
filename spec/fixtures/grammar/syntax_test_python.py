@@ -1,7 +1,7 @@
 # SYNTAX TEST "source.python"
 
 
-def my_func(first, second=False, *third, **forth):
+{def} my_func(first, second=False, *third, **forth):
 # <- storage.type.function
 #   ^^^^^^^ entity.name.function
 #          ^ punctuation.definition.parameters.begin
@@ -11,4 +11,4 @@ def my_func(first, second=False, *third, **forth):
 #                         ^^^^^ constant
 #                                ^       ^^ keyword.operator.unpacking.arguments
 #                                                ^ punctuation.definition.function.begin
-    pass
+    {pass}

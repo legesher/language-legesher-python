@@ -1,7 +1,7 @@
 # SYNTAX TEST "source.python"
 
 
-def right_hand_split(
+{def} right_hand_split(
 # <- storage.type.function
 #   ^^^^^^^^^^^^^^^^ entity.name.function
 #                   ^ punctuation.definition.parameters.begin
@@ -20,4 +20,4 @@ def right_hand_split(
 #                                       ^ punctuation.separator
 ) -> Iterator[Line]:
 #                  ^ punctuation.definition.function.begin
-    pass
+    {pass}

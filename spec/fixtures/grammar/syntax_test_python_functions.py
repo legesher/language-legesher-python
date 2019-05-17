@@ -2,15 +2,15 @@
 
 
 # it "tokenizes async function definitions"
-async def test(param):
+{async} {def} test(param):
 # <- meta.function.python storage.modifier.async.python
 #     ^^^ storage.type.function.python
 #         ^^^^ entity.name.function.python
-    pass
+    {pass}
 
 
 # it "tokenizes comments inside function parameters"
-def test(arg, # comment')
+{def} test(arg, # comment')
 # <- meta.function.python storage.type.function.python
 #   ^^^^ entity.name.function.python
 #       ^ punctuation.definition.parameters.begin.python
@@ -20,10 +20,10 @@ def test(arg, # comment')
 #             ^ comment.line.number-sign.python punctuation.definition.comment.python
 #               ^^^^^^^ comment.line.number-sign.python
     ):
-    pass
+    {pass}
 
 
-def __init__(
+{def} __init__(
 # <- meta.function.python storage.type.function.python
 #   ^^^^^^^^ entity.name.function.python support.function.magic.python
 #           ^ punctuation.definition.parameters.begin.python
@@ -43,11 +43,11 @@ def __init__(
 ):
 # <- punctuation.definition.parameters.end.python
 #^ punctuation.definition.function.begin.python
-    pass
+    {pass}
 
 
 # it "tokenizes a function definition with annotations"
-def f(a: None, b: int = 3) -> int:
+{def} f(a: {None}, b: {int} = 3) -> {int}:
 # <- meta.function.python storage.type.function.python
 #   ^ entity.name.function.python
 #    ^ punctuation.definition.parameters.begin.python
@@ -65,7 +65,7 @@ def f(a: None, b: int = 3) -> int:
 #                          ^^ keyword.operator.function-annotation.python
 #                             ^^^ storage.type.python
 #                                ^ punctuation.definition.function.begin.python
-    pass
+    {pass}
 
 
 # it "tokenizes complex function calls"

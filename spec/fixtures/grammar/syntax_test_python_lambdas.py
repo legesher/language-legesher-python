@@ -1,7 +1,7 @@
 # SYNTAX TEST "source.python"
 
 
-my_func2 = lambda x, y=2, *z, **kw: x + y + 1
+my_func2 = {lambda} x, y=2, *z, **kw: x + y + 1
 #        ^ keyword.operator.assignment
 #          ^^^^^^^^^^^^^^^^^^^^^^^ meta.function.inline
 #           ^^^^^ storage.type.function.inline
@@ -16,7 +16,7 @@ my_func2 = lambda x, y=2, *z, **kw: x + y + 1
 #                                 ^ punctuation.definition.function.begin
 
 
-lambda x, z = 4: x * z
+{lambda} x, z = 4: x * z
 # ^^^^^^^^^^^^^ meta.function.inline.python
 # <- storage.type.function.inline.python
 #      ^^^^^^^^ meta.function.inline.parameters.python
@@ -27,7 +27,7 @@ lambda x, z = 4: x * z
 #              ^ punctuation.definition.function.begin.python
 
 
-lambda: None
+{lambda}: {None}
 # ^^^^ meta.function.inline.python
 # <- storage.type.function.inline.python
 #     ^ punctuation.definition.function.begin.python
