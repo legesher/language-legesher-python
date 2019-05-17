@@ -1,4 +1,4 @@
-# SYNTAX TEST "source.python"
+# SYNTAX TEST "source.python.legesher"
 
 
 # it "tokenizes async function definitions"
@@ -69,7 +69,7 @@
 
 
 # it "tokenizes complex function calls"
-torch.nn.BCELoss()(Variable(bayes_optimal_prob, 1, requires_grad=False), Yvar).data[0]
+torch.nn.BCELoss()(Variable(bayes_optimal_prob, 1, requires_grad={False}), Yvar).data[0]
 #        ^^^^^^^^^ meta.method-call.python
 #        ^^^^^^^ entity.name.function.python
 #               ^ punctuation.definition.arguments.begin.bracket.round.python

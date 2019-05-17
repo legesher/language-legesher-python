@@ -1,4 +1,4 @@
-# SYNTAX TEST "source.python"
+# SYNTAX TEST "source.python.legesher"
 
 
 {def} right_hand_split(

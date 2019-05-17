@@ -1,4 +1,4 @@
-# SYNTAX TEST "source.python"
+# SYNTAX TEST "source.python.legesher"
 
 
 my_func2 = {lambda} x, y=2, *z, **kw: x + y + 1
