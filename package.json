@@ -1,6 +1,6 @@
 {
   "name": "language-legesher-python",
-  "version": "0.1.1",
+  "version": "0.53.1",
   "engines": {
     "atom": "*",
     "node": "*"
