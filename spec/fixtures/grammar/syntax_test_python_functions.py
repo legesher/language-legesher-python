@@ -3,86 +3,86 @@
 
 # it "tokenizes async function definitions"
 {async} {def} test(param):
-# <- meta.function.python storage.modifier.async.python
-#     ^^^ storage.type.function.python
-#         ^^^^ entity.name.function.python
+# <- meta.function.python.legesher storage.modifier.async.python.legesher
+#       ^^^ storage.type.function.python.legesher
+#             ^^^^ entity.name.function.python.legesher
     {pass}
 
 
 # it "tokenizes comments inside function parameters"
 {def} test(arg, # comment')
-# <- meta.function.python storage.type.function.python
-#   ^^^^ entity.name.function.python
-#       ^ punctuation.definition.parameters.begin.python
-#        ^^^^^^^^^^^^^^^^ meta.function.parameters.python
-#        ^^^ variable.parameter.function.python
-#           ^ punctuation.separator.parameters.python
-#             ^ comment.line.number-sign.python punctuation.definition.comment.python
-#               ^^^^^^^ comment.line.number-sign.python
+# <- meta.function.python.legesher storage.type.function.python.legesher
+#     ^^^^ entity.name.function.python.legesher
+#         ^ punctuation.definition.parameters.begin.python.legesher
+#          ^^^^^^^^^^^^^^^^ meta.function.parameters.python.legesher
+#          ^^^ variable.parameter.function.python.legesher
+#             ^ punctuation.separator.parameters.python.legesher
+#               ^ comment.line.number-sign.python.legesher punctuation.definition.comment.python.legesher
+#                 ^^^^^^^ comment.line.number-sign.python.legesher
     ):
     {pass}
 
 
 {def} __init__(
-# <- meta.function.python storage.type.function.python
-#   ^^^^^^^^ entity.name.function.python support.function.magic.python
-#           ^ punctuation.definition.parameters.begin.python
+# <- meta.function.python.legesher storage.type.function.python.legesher
+#     ^^^^^^^^ entity.name.function.python.legesher support.function.magic.python.legesher
+#             ^ punctuation.definition.parameters.begin.python.legesher
     self,
-#   ^^^^^ meta.function.parameters.python
-#   ^^^^ variable.parameter.function.python
-#       ^ punctuation.separator.parameters.python
+#   ^^^^^ meta.function.parameters.python.legesher
+#   ^^^^ variable.parameter.function.python.legesher
+#       ^ punctuation.separator.parameters.python.legesher
     codec, # comment
-#   ^^^^^^^^^^^^^^^^ meta.function.parameters.python
-#   ^^^^^ variable.parameter.function.python
-#        ^ punctuation.separator.parameters.python
-#          ^ comment.line.number-sign.python punctuation.definition.comment.python
-#            ^^^^^^^ comment.line.number-sign.python
+#   ^^^^^^^^^^^^^^^^ meta.function.parameters.python.legesher
+#   ^^^^^ variable.parameter.function.python.legesher
+#        ^ punctuation.separator.parameters.python.legesher
+#          ^ comment.line.number-sign.python.legesher punctuation.definition.comment.python.legesher
+#            ^^^^^^^ comment.line.number-sign.python.legesher
     config
-#   ^^^^^^ meta.function.parameters.python variable.parameter.function.python
-# >> meta.function.python
+#   ^^^^^^ meta.function.parameters.python.legesher variable.parameter.function.python.legesher
+# >> meta.function.python.legesher
 ):
-# <- punctuation.definition.parameters.end.python
-#^ punctuation.definition.function.begin.python
+# <- punctuation.definition.parameters.end.python.legesher
+#^ punctuation.definition.function.begin.python.legesher
     {pass}
 
 
 # it "tokenizes a function definition with annotations"
-{def} f(a: {None}, b: {int} = 3) -> {int}:
-# <- meta.function.python storage.type.function.python
-#   ^ entity.name.function.python
-#    ^ punctuation.definition.parameters.begin.python
-#     ^^^^^^^^^^^^^^^^^^^ meta.function.parameters.python
-#     ^ variable.parameter.function.python
-#      ^ punctuation.separator.python
-#        ^^^^ storage.type.python
-#            ^ punctuation.separator.parameters.python
-#              ^ variable.parameter.function.python
-#               ^ punctuation.separator.python
-#                 ^^^ storage.type.python
-#                     ^ keyword.operator.assignment.python
-#                       ^ constant.numeric.integer.decimal.python
-#                        ^ punctuation.definition.parameters.end.python
-#                          ^^ keyword.operator.function-annotation.python
-#                             ^^^ storage.type.python
-#                                ^ punctuation.definition.function.begin.python
+{def} f(a: None, b: int = 3) -> int:
+# <- meta.function.python.legesher storage.type.function.python.legesher
+#     ^ entity.name.function.python.legesher
+#      ^ punctuation.definition.parameters.begin.python.legesher
+#       ^^^^^^^^^^^^^^^^^^^ meta.function.parameters.python.legesher
+#       ^ variable.parameter.function.python.legesher
+#        ^ punctuation.separator.python.legesher
+#          ^^^^ storage.type.python.legesher
+#              ^ punctuation.separator.parameters.python.legesher
+#                ^ variable.parameter.function.python.legesher
+#                 ^ punctuation.separator.python.legesher
+#                   ^^^ storage.type.python.legesher
+#                       ^ keyword.operator.assignment.python.legesher
+#                         ^ constant.numeric.integer.decimal.python.legesher
+#                          ^ punctuation.definition.parameters.end.python.legesher
+#                            ^^ keyword.operator.function-annotation.python.legesher
+#                               ^^^ storage.type.python.legesher
+#                                  ^ punctuation.definition.function.begin.python.legesher
     {pass}
 
-
-# it "tokenizes complex function calls"
-torch.nn.BCELoss()(Variable(bayes_optimal_prob, 1, requires_grad={False}), Yvar).data[0]
-#        ^^^^^^^^^ meta.method-call.python
-#        ^^^^^^^ entity.name.function.python
-#               ^ punctuation.definition.arguments.begin.bracket.round.python
-#                ^ punctuation.definition.arguments.end.bracket.round.python
-#                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^ meta.function-call.python
-#                 ^ punctuation.definition.arguments.begin.bracket.round.python
-#                  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^ meta.function-call.arguments.python
-#                  ^^^^^^^^ entity.name.function.python
-#                          ^ punctuation.definition.arguments.begin.bracket.round.python
-#                           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^ meta.function-call.arguments.python
-#                                                  ^^^^^^^^^^^^^ variable.parameter.function.python
-#                                                                ^^^^^ constant.language.python
-#                                                                     ^ punctuation.definition.arguments.end.bracket.round.python
-#                                                                      ^ punctuation.separator.arguments.python
-#                                                                            ^ punctuation.definition.arguments.end.bracket.round.python
-#                                                                             ^ punctuation.separator.property.period.python
+#
+# # it "tokenizes complex function calls"
+# torch.nn.BCELoss()(Variable(bayes_optimal_prob, 1, requires_grad={False}), Yvar).data[0]
+# #        ^^^^^^^^^ meta.method-call.python.legesher
+# #        ^^^^^^^ entity.name.function.python.legesher
+# #               ^ punctuation.definition.arguments.begin.bracket.round.python.legesher
+# #                ^ punctuation.definition.arguments.end.bracket.round.python.legesher
+# #                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^ meta.function-call.python.legesher
+# #                 ^ punctuation.definition.arguments.begin.bracket.round.python.legesher
+# #                  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^ meta.function-call.arguments.python.legesher
+# #                  ^^^^^^^^ entity.name.function.python.legesher
+# #                          ^ punctuation.definition.arguments.begin.bracket.round.python.legesher
+# #                           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^ meta.function-call.arguments.python.legesher
+# #                                                  ^^^^^^^^^^^^^ variable.parameter.function.python.legesher
+# #                                                                ^^^^^^^ constant.language.python.legesher
+# #                                                                       ^ punctuation.definition.arguments.end.bracket.round.python.legesher
+# #                                                                        ^ punctuation.separator.arguments.python.legesher
+# #                                                                              ^ punctuation.definition.arguments.end.bracket.round.python.legesher
+# #                                                                               ^ punctuation.separator.property.period.python.legesher
