@@ -1,0 +1,34 @@
+'scopeName': 'text.python.traceback.legesher'
+'name': 'Python Traceback Legesher'
+'fileTypes': [
+  'pytb'
+]
+'patterns': [
+  {
+    'match': '^  File ("[^"]+"), line (\\d+)(?:, in (.+))?$'
+    'captures': {
+      '1':
+        'name': 'string.python.traceback.legesher'
+      '2':
+        'name': 'constant.numeric.python.traceback.legesher'
+      '3':
+        'name': 'entity.name.function.python.traceback.legesher'
+    }
+  }
+  {
+    'match': '^    (.+)$'
+    'captures':
+      '1':
+        'patterns': [
+          'include': 'source.python.legesher'
+        ]
+  }
+  {
+    'match': '^([^\\s:]+):(?: (.+))?$'
+    'captures':
+      '1':
+        'name': 'entity.name.type.class.python.traceback.legesher'
+      '2':
+        'name': 'string.python.traceback.legesher'
+  }
+]
