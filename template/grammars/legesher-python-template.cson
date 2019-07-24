@@ -89,13 +89,13 @@
     'captures':
       '1':
         'name': 'storage.modifier.global.python.legesher'
-    'match': '\\b(testgloballegesher)\\b'
+    'match': '\\b({global})\\b'
   }
   {
     'captures':
       '1':
         'name': 'storage.modifier.nonlocal.python.legesher'
-    'match': '\\b(testnonlocallegesher)\\b'
+    'match': '\\b({nonlocal})\\b'
   }
   {
     'captures':
@@ -103,31 +103,31 @@
         'name': 'keyword.control.import.python.legesher'
       '2':
         'name': 'keyword.control.import.from.python.legesher'
-    'match': '\\b(?:(testimportlegesher)|(testfromlegesher))\\b'
+    'match': '\\b(?:({import})|({from}))\\b'
   }
   {
     'comment': 'keywords that delimit flow conditionals'
     'name': 'keyword.control.conditional.python.legesher'
-    'match': '\\b(testiflegesher|testeliflegesher|testelselegesher)\\b'
+    'match': '\\b({if}|{elif}|{else})\\b'
   }
   {
     'comment': 'keywords that delimit an exception'
     'name': 'keyword.control.exception.python.legesher'
-    'match': '\\b(testexceptlegesher|testfinallylegesher|testtrylegesher|testraiselegesher)\\b'
+    'match': '\\b({except}|{finally}|{try}|{raise})\\b'
   }
   {
     'comment': 'keywords that delimit loops'
     'name': 'keyword.control.repeat.python.legesher'
-    'match': '\\b(testforlegesher|testwhilelegesher)\\b'
+    'match': '\\b({for}|{while})\\b'
   }
   {
     'comment': 'keywords that alter flow from within a block'
     'name': 'keyword.control.statement.python.legesher'
-    'match': '\\b(testwithlegesher|testbreaklegesher|testcontinuelegesher|testpasslegesher|testreturnlegesher|testyieldlegesher(\\s+testfromlegesher)?|testawaitlegesher)\\b'
+    'match': '\\b({with}|{break}|{continue}|{pass}|{return}|{yield}(\\s+{from})?|{await})\\b'
   }
   {
     'comment': 'keyword operators that evaluate to True or False'
-    'match': '\\b(testandlegesher|testinlegesher|testislegesher|testnotlegesher|testorlegesher)\\b'
+    'match': '\\b({and}|{in}|{is}|{not}|{or})\\b'
     'name': 'keyword.operator.logical.python.legesher'
   }
   {
@@ -135,7 +135,7 @@
       '1':
         'name': 'keyword.other.python.legesher'
     'comment': 'keywords that haven\'t fit into other groups (yet).'
-    'match': '\\b(testaslegesher|testassertlegesher|testdellegesher|testexeclegesher|testprintlegesher)\\b'
+    'match': '\\b({as}|{assert}|{del}|{exec}|{print})\\b'
   }
   {
     'match': '<>'
@@ -158,7 +158,7 @@
     'name': 'keyword.operator.assignment.python.legesher'
   }
   {
-    'begin': '^\\s*(testclasslegesher)\\s+(?=[a-zA-Z_][a-zA-Z_0-9]*\\s*\\:)'
+    'begin': '^\\s*({class})\\s+(?=[a-zA-Z_][a-zA-Z_0-9]*\\s*\\:)'
     'beginCaptures':
       '1':
         'name': 'storage.type.class.python.legesher'
@@ -175,7 +175,7 @@
     ]
   }
   {
-    'begin': '^\\s*(testclasslegesher)\\s+(?=[a-zA-Z_][a-zA-Z_0-9]*\\s*\\()'
+    'begin': '^\\s*({class})\\s+(?=[a-zA-Z_][a-zA-Z_0-9]*\\s*\\()'
     'beginCaptures':
       '1':
         'name': 'storage.type.class.python.legesher'
@@ -225,7 +225,7 @@
     ]
   }
   {
-    'begin': '^\\s*(testclasslegesher)\\s+(?=[a-zA-Z_][a-zA-Z_0-9])'
+    'begin': '^\\s*({class})\\s+(?=[a-zA-Z_][a-zA-Z_0-9])'
     'beginCaptures':
       '1':
         'name': 'storage.type.class.python.legesher'
@@ -250,7 +250,7 @@
     ]
   }
   {
-    'begin': '^\\s*(?:(testasynclegesher)\\s+)?(testdeflegesher)\\s+(?=[A-Za-z_][A-Za-z0-9_]*)'
+    'begin': '^\\s*(?:({async})\\s+)?({def})\\s+(?=[A-Za-z_][A-Za-z0-9_]*)'
     'beginCaptures':
       '1':
         'name': 'storage.modifier.async.python.legesher'
@@ -339,7 +339,7 @@
     ]
   }
   {
-    'begin': '\\b(testlambdalegesher)\\b'
+    'begin': '\\b({lambda})\\b'
     'beginCaptures':
       '1':
         'name': 'storage.type.function.inline.python.legesher'
@@ -513,13 +513,13 @@
     'captures':
       '1':
         'name': 'storage.type.class.python.legesher'
-    'match': '\\b(testclasslegesher)\\b'
+    'match': '\\b({class})\\b'
   }
   {
     'include': '#line_continuation'
   }
   {
-    'match': '\\b(testNonelegesher|testTruelegesher|testFalselegesher|testEllipsislegesher|testNotImplementedlegesher)\\b'
+    'match': '\\b({None}|{True}|{False}|{Ellipsis}|{NotImplemented})\\b'
     'name': 'constant.language.python.legesher'
   }
   {
@@ -637,13 +637,13 @@
 ]
 'repository':
   'builtin_exceptions':
-    'match': '(?x)\\b(\n\t\t\t\t(\n\t\t\t\t\ttestArithmeticlegesher|testAssertionlegesher|testAttributelegesher|testBlockingIOlegesher|testBrokenPipelegesher|testBufferlegesher|testChildProcesslegesher|\n\t\t\t\t\ttestConnectionlegesher(testAbortedlegesher|testRefusedlegesher|testResetlegesher)?|testEOFlegesher|testEnvironmentlegesher|testFileExistslegesher|\n\t\t\t\t\ttestFileNotFoundlegesher|testFloatingPointlegesher|testInterruptedlegesher|testIOlegesher|testIsADirectoryErrorlegesher|\n\t\t\t\t\ttestImportlegesher|testIndentationlegesher|testIndexlegesher|testKeylegesher|testLookuplegesher|testMemorylegesher|testNamelegesher|testNotADirectorylegesher|\n\t\t\t\t\ttestNotImplementedlegesher|testOSlegesher|testOverflowlegesher|testPermissionlegesher|testProcessLookuplegesher|testRecursionlegesher|testReferencelegesher|\n\t\t\t\t\ttestRuntimelegesher|testStandardlegesher|testSyntaxlegesher|testSystemlegesher|testTablegesher|testTimeoutlegesher|testTypelegesher|testUnboundLocallegesher|\n\t\t\t\t\ttestUnicodelegesher(testEncodelegesher|testDecodelegesher|testTranslatelegesher)?|testValuelegesher|testVMSlegesher|testWindowslegesher|testZeroDivisionlegesher\n\t\t\t\t)testErrorlegesher|\n\t\t\t\t((testPendinglegesher)?testDeprecationlegesher|testRuntimelegesher|testSyntaxlegesher|testUserlegesher|testFuturelegesher|testImportlegesher|testUnicodelegesher|testByteslegesher)?testWarninglegesher|\n\t\t\t\t(testBaselegesher)?testExceptionlegesher|\n\t\t\t\ttestSystemExitlegesher|testStopAsyncIterationlegesher|testStopIterationlegesher|testNotImplementedlegesher|testKeyboardInterruptlegesher|testGeneratorExitlegesher\n\t\t\t)\\b'
+    'match': '(?x)\\b(\n\t\t\t\t(\n\t\t\t\t\tArithmetic|Assertion|Attribute|BlockingIO|BrokenPipe|Buffer|ChildProcess|\n\t\t\t\t\tConnection(Aborted|Refused|Reset)?|EOF|Environment|FileExists|\n\t\t\t\t\tFileNotFound|FloatingPoint|Interrupted|IO|IsADirectoryError|\n\t\t\t\t\tImport|Indentation|Index|Key|Lookup|Memory|Name|NotADirectory|\n\t\t\t\t\tNotImplemented|OS|Overflow|Permission|ProcessLookup|Recursion|Reference|\n\t\t\t\t\tRuntime|Standard|Syntax|System|Tab|Timeout|Type|UnboundLocal|\n\t\t\t\t\tUnicode(Encode|Decode|Translate)?|Value|VMS|Windows|ZeroDivision\n\t\t\t\t)Error|\n\t\t\t\t((Pending)?Deprecation|Runtime|Syntax|User|Future|Import|Unicode|Bytes)?Warning|\n\t\t\t\t(Base)?Exception|\n\t\t\t\tSystemExit|StopAsyncIteration|StopIteration|NotImplemented|KeyboardInterrupt|GeneratorExit\n\t\t\t)\\b'
     'name': 'support.type.exception.python.legesher'
   'builtin_functions':
-    'match': '(?x)\\b(test__import__legesher|testabslegesher|testalllegesher|testanylegesher|testasciilegesher|testbinlegesher|testboollegesher|testbytearraylegesher|testbyteslegesher|testcallablelegesher|testchrlegesher|testclassmethodlegesher|testcompilelegesher|testcomplexlegesher|testdelattrlegesher|testdictlegesher|testdirlegesher|testdivmodlegesher|testenumeratelegesher|testevallegesher|testexeclegesher|testfilterlegesher|testfloatlegesher|testformatlegesher|testfrozensetlegesher|testgetattrlegesher|testglobalslegesher|testhasattrlegesher|testhashlegesher|testhelplegesher|testhexlegesher|testidlegesher|testinputlegesher|testintlegesher|testisinstancelegesher|testissubclasslegesher|testiterlegesher|testlenlegesher|testlistlegesher|testlocalslegesher|testmaplegesher|testmaxlegesher|testmemoryviewlegesher|testminlegesher|testnextlegesher|testobjectlegesher|testoctlegesher|testopenlegesher|testordlegesher|testpowlegesher|testprintlegesher|testpropertylegesher|testrangelegesher|testreprlegesher|testreversedlegesher|testroundlegesher|testsetlegesher|testsetattrlegesher|testslicelegesher|testsortedlegesher|teststaticmethodlegesher|teststrlegesher|testsumlegesher|testsuperlegesher|testtuplelegesher|testtypelegesher|testvarslegesher|testziplegesher|testfilelegesher|testlonglegesher|testraw_inputlegesher|testreducelegesher|testreloadlegesher|testunichrlegesher|testunicodelegesher|testxrangelegesher|testapplylegesher|testbufferlegesher|testcoercelegesher|testinternlegesher|testexecfilelegesher)\\b'
+    'match': '(?x)\\b(__import__|abs|all|any|ascii|bin|bool|bytearray|bytes|callable|chr|classmethod|compile|complex|delattr|dict|dir|divmod|enumerate|eval|exec|filter|float|format|frozenset|getattr|globals|hasattr|hash|help|hex|id|input|int|isinstance|issubclass|iter|len|list|locals|map|max|memoryview|min|next|object|oct|open|ord|pow|print|property|range|repr|reversed|round|set|setattr|slice|sorted|staticmethod|str|sum|super|tuple|type|vars|zip|file|long|raw_input|reduce|reload|unichr|unicode|xrange|apply|buffer|coerce|intern|execfile)\\b'
     'name': 'support.function.builtin.python.legesher'
   'builtin_types':
-    'match': '(?x)\\b(\n\t\t\t\ttestbasestringlegesher|testboollegesher|testbufferlegesher|testbytearraylegesher|testbyteslegesher|testcomplexlegesher|testdictlegesher|testfloatlegesher|testfrozensetlegesher|testintlegesher|\n\t\t\t\ttestlistlegesher|testlonglegesher|testmemoryviewlegesher|testobjectlegesher|testrangelegesher|testsetlegesher|testslicelegesher|teststrlegesher|testtuplelegesher|testunicodelegesher|testxrangelegesher\n\t\t\t)\\b'
+    'match': '(?x)\\b(\n\t\t\t\tbasestring|bool|buffer|bytearray|bytes|complex|dict|float|frozenset|int|\n\t\t\t\tlist|long|memoryview|object|range|set|slice|str|tuple|unicode|xrange\n\t\t\t)\\b'
     'name': 'support.type.python.legesher'
   'docstrings':
     'patterns': [
@@ -848,7 +848,7 @@
   'generic_names':
     'match': '[A-Za-z_][A-Za-z0-9_]*'
   'illegal_names':
-    'match': '\\b(testandlegesher|testaslegesher|testassertlegesher|testbreaklegesher|testclasslegesher|testcontinuelegesher|testdeflegesher|testdellegesher|testeliflegesher|testelselegesher|testexceptlegesher|testexeclegesher|testfinallylegesher|testforlegesher|testfromlegesher|testgloballegesher|testiflegesher|testimportlegesher|testinlegesher|testislegesher|testlambdalegesher|testnonlocallegesher|testnotlegesher|testorlegesher|testpasslegesher|testprintlegesher|testraiselegesher|testreturnlegesher|testtrylegesher|testwhilelegesher|testwithlegesher|testyieldlegesher|testawaitlegesher)\\b'
+    'match': '\\b({and}|{as}|{assert}|{break}|{class}|{continue}|{def}|{del}|{elif}|{else}|{except}|{exec}|{finally}|{for}|{from}|{global}|{if}|{import}|{in}|{is}|{lambda}|{nonlocal}|{not}|{or}|{pass}|{print}|{raise}|{return}|{try}|{while}|{with}|{yield}|{await})\\b'
     'name': 'invalid.illegal.name.python.legesher'
   'keyword_arguments':
     'begin': '\\b([a-zA-Z_][a-zA-Z_0-9]*)\\s*(=)(?!=)'
@@ -894,11 +894,11 @@
     'match': '(\\\\)(.*)$\\n?'
   'magic_function_names':
     'comment': 'these methods have magic interpretation by python and are generally called indirectly through syntactic constructs'
-    'match': '(?x)\\b(__(?:abs|add|testandlegesher|bool|bytes|call|cmp|coerce|complex|contains|testdellegesher|delattr|delete|delitem|delslice|dir|div|divmod|enter|eq|exit|float|floordiv|format|ge|get|getattr|getattribute|getitem|getslice|gt|hash|hex|iadd|iand|idiv|ifloordiv|ilshift|imatmul|imod|imul|index|init|instancecheck|int|invert|ior|ipow|irshift|isub|iter|itruediv|ixor|le|len|length_hint|long|lshift|lt|matmul|missing|mod|mul|ne|neg|next|new|nonzero|oct|testorlegesher|pos|pow|radd|rand|rdiv|rdivmod|repr|reversed|rfloordiv|rlshift|rmatmul|rmod|rmul|ror|round|rpow|rrshift|rshift|rsub|rtruediv|rxor|set|setattr|setitem|setslice|str|sub|subclasscheck|truediv|unicode|xor)__)\\b'
+    'match': '(?x)\\b(__(?:abs|add|{and}|bool|bytes|call|cmp|coerce|complex|contains|{del}|delattr|delete|delitem|delslice|dir|div|divmod|enter|eq|exit|float|floordiv|format|ge|get|getattr|getattribute|getitem|getslice|gt|hash|hex|iadd|iand|idiv|ifloordiv|ilshift|imatmul|imod|imul|index|init|instancecheck|int|invert|ior|ipow|irshift|isub|iter|itruediv|ixor|le|len|length_hint|long|lshift|lt|matmul|missing|mod|mul|ne|neg|next|new|nonzero|oct|{or}|pos|pow|radd|rand|rdiv|rdivmod|repr|reversed|rfloordiv|rlshift|rmatmul|rmod|rmul|ror|round|rpow|rrshift|rshift|rsub|rtruediv|rxor|set|setattr|setitem|setslice|str|sub|subclasscheck|truediv|unicode|xor)__)\\b'
     'name': 'support.function.magic.python.legesher'
   'magic_variable_names':
     'comment': 'magic variables which a class/module may have.'
-    'match': '\\b__(all|annotations|bases|testclasslegesher|closure|code|debug|dict|doc|file|func|globals|kwdefaults|members|metaclass|methods|module|name|qualname|self|slots|weakref)__\\b'
+    'match': '\\b__(all|annotations|bases|{class}|closure|code|debug|dict|doc|file|func|globals|kwdefaults|members|metaclass|methods|module|name|qualname|self|slots|weakref)__\\b'
     'name': 'support.variable.magic.python.legesher'
   'method_calls':
     'patterns': [
