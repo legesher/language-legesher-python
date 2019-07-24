@@ -21,16 +21,16 @@ describe "Python grammar", ->
     expect(grammar).toBeDefined()
     expect(grammar.scopeName).toBe "source.python.legesher"
 
-  # it "tokenizes `testyieldlegesher`", ->
-  #   {tokens} = grammar.tokenizeLine '{testyieldlegesher} v'
-  #
-  #   expect(tokens[0]).toEqual value: 'testyieldlegesher', scopes: ['source.python.legesher', 'keyword.control.statement.python.legesher']
-  #
-  # it "tokenizes `testyieldlegesher testfromlegesher`", ->
-  #   {tokens} = grammar.tokenizeLine 'testyieldlegesher testfromlegesher v'
-  #
-  #   expect(tokens[0]).toEqual value: 'testyieldlegesher testfromlegesher', scopes: ['source.python.legesher', 'keyword.control.statement.python.legesher']
-  #
+  it "tokenizes `testyieldlegesher`", ->
+    {tokens} = grammar.tokenizeLine 'testyieldlegesher v'
+
+    expect(tokens[0]).toEqual value: 'testyieldlegesher', scopes: ['source.python.legesher', 'keyword.control.statement.python.legesher']
+
+  it "tokenizes `testyieldlegesher testfromlegesher`", ->
+    {tokens} = grammar.tokenizeLine 'testyieldlegesher testfromlegesher v'
+
+    expect(tokens[0]).toEqual value: 'testyieldlegesher testfromlegesher', scopes: ['source.python.legesher', 'keyword.control.statement.python.legesher']
+
   it "tokenizes multi-line strings", ->
     tokens = grammar.tokenizeLines('"1\\\n2"')
 
