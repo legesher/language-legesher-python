@@ -10,10 +10,10 @@
     'body': '# -*- coding: utf-8 -*-\n'
   'Import':
     'prefix': 'im'
-    'body': '{import} ${1:package/module}'
+    'body': 'testimportlegesher ${1:package/module}'
   'From/Import':
     'prefix': 'fim'
-    'body': '{from} ${1:package/module} {import} ${2:names}'
+    'body': 'testfromlegesher ${1:package/module} testimportlegesher ${2:names}'
   'Assert Equal':
     'prefix': 'ase'
     'body': 'self.assertEqual(${1:expected}, ${2:actual}${3:, \'${4:message}\'})$0'
@@ -55,67 +55,67 @@
     'body': 'self.fail(\'${1:message}\')$0'
   'New Class':
     'prefix': 'class'
-    'body': '{class} ${1:ClassName}(${2:object}):\n\t"""${3:docstring {for} $1.}"""\n\n\tdef __init__(self, ${4:arg}):\n\t\t${5:super($1, self).__init__()}\n\t\tself.arg = arg\n\t\t$0'
+    'body': 'testclasslegesher ${1:ClassName}(${2:object}):\n\t"""${3:docstring testforlegesher $1.}"""\n\n\tdef __init__(self, ${4:arg}):\n\t\t${5:super($1, self).__init__()}\n\t\tself.arg = arg\n\t\t$0'
   'New Method':
     'prefix': 'defs'
-    'body': '{def} ${1:mname}(self, ${2:arg}):\n\t${3:{pass}}'
+    'body': 'testdeflegesher ${1:mname}(self, ${2:arg}):\n\t${3:testpasslegesher}'
   'New Function':
     'prefix': 'def'
-    'body': '{def} ${1:fname}(${2:arg}):\n\t${3:{pass}}'
+    'body': 'testdeflegesher ${1:fname}(${2:arg}):\n\t${3:testpasslegesher}'
   'New Property':
     'prefix': 'property'
-    'body': '{def} ${1:foo}():\n    doc = "${2:The $1 property.}"\n    {def} fget(self):\n        ${3:{return} self._$1}\n    {def} fset(self, value):\n        ${4:self._$1 = value}\n    {def} fdel(self):\n        ${5:{del} self._$1}\n    {return} locals()\n$1 = property(**$1())$0'
+    'body': 'testdeflegesher ${1:foo}():\n    doc = "${2:The $1 property.}"\n    testdeflegesher fget(self):\n        ${3:testreturnlegesher self._$1}\n    testdeflegesher fset(self, value):\n        ${4:self._$1 = value}\n    testdeflegesher fdel(self):\n        ${5:testdellegesher self._$1}\n    testreturnlegesher locals()\n$1 = property(**$1())$0'
   'if':
     'prefix': 'if'
-    'body': '{if} ${1:condition}:\n\t${2:{pass}}'
+    'body': 'testiflegesher ${1:condition}:\n\t${2:testpasslegesher}'
   'for':
     'prefix': 'for'
-    'body': '{for} ${1:value} {in} ${2:variable}:\n\t${3:{pass}}'
+    'body': 'testforlegesher ${1:value} testinlegesher ${2:variable}:\n\t${3:testpasslegesher}'
   'while':
     'prefix': 'while'
-    'body': '{while} ${1:condition}:\n\t${2:{pass}}'
+    'body': 'testwhilelegesher ${1:condition}:\n\t${2:testpasslegesher}'
   'with statement':
     'prefix': 'with'
-    'body': '{with} ${1:expression} {as} ${2:target}:\n\t${3:{pass}}'
+    'body': 'testwithlegesher ${1:expression} testaslegesher ${2:target}:\n\t${3:testpasslegesher}'
   'Try/Except/Else/Finally':
     'prefix': 'tryef'
-    'body': '{try}:\n\t${1:{pass}}\nexcept${2: ${3:Exception} {as} ${4:e}}:\n\t${5:{raise}}\nelse:\n\t${6:{pass}}\nfinally:\n\t${7:{pass}}'
+    'body': 'testtrylegesher:\n\t${1:testpasslegesher}\nexcept${2: ${3:Exception} testaslegesher ${4:e}}:\n\t${5:testraiselegesher}\nelse:\n\t${6:testpasslegesher}\nfinally:\n\t${7:testpasslegesher}'
   'Try/Except/Else':
     'prefix': 'trye'
-    'body': '{try}:\n\t${1:{pass}}\nexcept ${2:Exception} {as} ${3:e}:\n\t${4:{raise} $3}\nelse:\n\t${5:{pass}}'
+    'body': 'testtrylegesher:\n\t${1:testpasslegesher}\nexcept ${2:Exception} testaslegesher ${3:e}:\n\t${4:testraiselegesher $3}\nelse:\n\t${5:testpasslegesher}'
   'Try/Except/Finally':
     'prefix': 'tryf'
-    'body': '{try}:\n\t${1:{pass}}\nexcept ${2:Exception} {as} ${3:e}:\n\t${4:{raise} $3}\nfinally:\n\t${5:{pass}}'
+    'body': 'testtrylegesher:\n\t${1:testpasslegesher}\nexcept ${2:Exception} testaslegesher ${3:e}:\n\t${4:testraiselegesher $3}\nfinally:\n\t${5:testpasslegesher}'
   'Try/Except':
     'prefix': 'try'
-    'body': '{try}:\n\t${1:{pass}}\nexcept ${2:Exception} {as} ${3:e}:\n\t${4:{raise} $3}'
+    'body': 'testtrylegesher:\n\t${1:testpasslegesher}\nexcept ${2:Exception} testaslegesher ${3:e}:\n\t${4:testraiselegesher $3}'
   'List Comprehension':
     'prefix': 'lc'
-    'body': '[${1:value} {for} ${2:value} {in} ${3:variable}]'
+    'body': '[${1:value} testforlegesher ${2:value} testinlegesher ${3:variable}]'
   'List Comprehension If Else':
     'prefix': 'lcie'
-    'body': '[${1:value} {if} ${2:condition} {else} ${3:value} {for} ${4:value} {in} ${5:variable}]'
+    'body': '[${1:value} testiflegesher ${2:condition} testelselegesher ${3:value} testforlegesher ${4:value} testinlegesher ${5:variable}]'
   'Dictionary Comprehension':
     'prefix': 'dc'
-    'body': '{${1:key}: ${2:value} {for} ${3:key}, ${4:value} {in} ${5:variable}}'
+    'body': '{${1:key}: ${2:value} testforlegesher ${3:key}, ${4:value} testinlegesher ${5:variable}}'
   'Set Comprehension':
     'prefix': 'sc'
-    'body': '{${1:value} {for} ${2:value} {in} ${3:variable}}'
+    'body': '{${1:value} testforlegesher ${2:value} testinlegesher ${3:variable}}'
   'PDB set trace':
     'prefix': 'pdb'
-    'body': '{import} pdb; pdb.set_trace()'
+    'body': 'testimportlegesher pdb; pdb.set_trace()'
   'iPDB set trace':
     'prefix': 'ipdb'
-    'body': '{import} ipdb; ipdb.set_trace()'
+    'body': 'testimportlegesher ipdb; ipdb.set_trace()'
   'rPDB set trace':
     'prefix': 'rpdb'
-    'body': '{import} rpdb2; rpdb2.start_embedded_debugger(\'${1:debug_password}\')$0'
+    'body': 'testimportlegesher rpdb2; rpdb2.start_embedded_debugger(\'${1:debug_password}\')$0'
   'PuDB set trace':
     'prefix': 'pudb'
-    'body': '{import} pudb; pudb.set_trace()'
+    'body': 'testimportlegesher pudb; pudb.set_trace()'
   '__magic__':
     'prefix': '__'
     'body': '__${1:init}__'
   'if __name__ == \'__main__\'':
     'prefix': 'ifmain'
-    'body': '{if} __name__ == \'__main__\':\n\t${1:main()}$0'
+    'body': 'testiflegesher __name__ == \'__main__\':\n\t${1:main()}$0'
