@@ -8,7 +8,8 @@
   "description": "Python language support in Atom for the Legesher project",
   "keywords": [
     "tree-sitter",
-    "legesher"
+    "legesher",
+    "python"
   ],
   "repository": {
     "type": "git",
@@ -20,7 +21,7 @@
   },
   "dependencies": {
     "atom-grammar-test": "^0.6.4",
-    "tree-sitter-legesher-python": "^0.14.4"
+    "tree-sitter-legesher-python": "^0.14.7"
   },
   "devDependencies": {
     "coffeelint": "^1.10.1"

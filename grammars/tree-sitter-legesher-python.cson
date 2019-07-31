@@ -90,11 +90,11 @@ scopes:
 
   'decorator': 'entity.name.function.decorator'
 
-  'testnonelegesher': 'constant.language'
-  'testtruelegesher': 'constant.language'
-  'testfalselegesher': 'constant.language'
-  'testintegerlegesher': 'constant.numeric'
-  'testfloatlegesher': 'constant.numeric'
+  'none': 'constant.language'
+  'true': 'constant.language'
+  'false': 'constant.language'
+  'integer': 'constant.numeric'
+  'float': 'constant.numeric'
 
   'type > identifier': 'support.storage.type'
 
