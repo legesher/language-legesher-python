@@ -1,7 +1,7 @@
-MIT License
+**MIT License**
 
-Copyright (c) 2019 Legesher
-Copyright (c) 2014 GitHub Inc.
+_Copyright (c) 2019 Legesher_   
+_Copyright (c) 2014 GitHub Inc._  
 
 Permission is hereby granted, free of charge, to any person obtaining a copy
 of this software and associated documentation files (the "Software"), to deal
@@ -23,7 +23,7 @@ SOFTWARE.
 
 --------------------------------------------------------------------
 
-This package was derived from multiple sources: Atom's Language Python package located at https://github.com/atom/language-python and distributed under the above MIT license, and a TextMate bundle located at
+This package was derived from multiple sources: Atom's Language Python package located at https://github.com/atom/language-python and distributed under the above MIT license, found in `LICENSE.md`, and a TextMate bundle located at
 https://github.com/textmate/python.tmbundle and distributed under the following
 license, located in `README.md`:
 
