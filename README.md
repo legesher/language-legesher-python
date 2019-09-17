@@ -1,7 +1,7 @@
 # Legesher Python language support in Atom
-[![macOS Build Status](https://travis-ci.org/legesher/language-legesher-python.svg?branch=master)](https://travis-ci.org/legesher/language-legesher-python)
+[![macOS Build Status](https://travis-ci.com/legesher/language-legesher-python.svg?branch=master)](https://travis-ci.com/legesher/language-legesher-python)
 [![Windows Build Status](https://ci.appveyor.com/api/projects/status/hmxrb9jttjh41es9/branch/master?svg=true)](https://ci.appveyor.com/project/legesher/language-legesher-python/branch/master)
-[![Dependency Status](https://david-dm.org/atom/language-legesher-python.svg)](https://david-dm.org/atom/language-legesher-python)
+[![Dependency Status](https://david-dm.org/legesher/language-legesher-python.svg)](https://david-dm.org/legesher/language-legesher-python)
 
 Adds syntax highlighting and snippets to Python files with Legesher in Atom.
 
