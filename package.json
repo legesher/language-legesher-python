@@ -1,6 +1,6 @@
 {
   "name": "language-legesher-python",
-  "version": "0.56.1",
+  "version": "0.56.2",
   "engines": {
     "atom": "*",
     "node": "*"
@@ -21,9 +21,10 @@
   },
   "dependencies": {
     "atom-grammar-test": "^0.6.4",
-    "tree-sitter-legesher-python": "^0.14.7"
+    "tree-sitter-legesher-python": "^0.15.1"
   },
   "devDependencies": {
-    "coffeelint": "^1.10.1"
+    "coffeelint": "^1.10.1",
+    "electron-rebuild": "^1.8.6"
   }
 }
