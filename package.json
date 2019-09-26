@@ -1,6 +1,7 @@
 {
   "name": "language-legesher-python",
   "version": "0.56.8",
+  "author": "Madison Edgar <withmadico@gmail.com> https://withmadi.co",
   "engines": {
     "atom": "*",
     "node": "*"
@@ -9,6 +10,7 @@
   "keywords": [
     "tree-sitter",
     "legesher",
+    "atom",
     "python"
   ],
   "repository": {
