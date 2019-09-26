@@ -8,9 +8,9 @@
 <!-- DEVELOPMENT BADGES -->
 <p align="center" style="margin-bottom: 5px; margin-top: 5px;">
     <a href="https://travis-ci.com/legesher/language-legesher-python">
-        <img src="https://img.shields.io/travis/com/legesher/language-legesher-python?style=flat-square&labelColor=black" alt="macOS Build Status"></a>
+        <img src="https://img.shields.io/travis/com/legesher/language-legesher-python?style=flat-square&labelColor=black&logo=travis&logoColor=white" alt="macOS Build Status"></a>
     <a href="https://ci.appveyor.com/project/madiedgar/language-legesher-python">
-        <img src="https://img.shields.io/appveyor/ci/madiedgar/language-legesher-python?style=flat-square&labelColor=black" alt="Windows Build Status"></a>
+        <img src="https://img.shields.io/appveyor/ci/madiedgar/language-legesher-python?style=flat-square&labelColor=black&logo=appveyor&logoColor=white" alt="Windows Build Status"></a>
     <a href="https://david-dm.org/legesher/language-legesher-python">
         <img src="https://img.shields.io/david/legesher/language-legesher-python?style=flat-square&labelColor=black" alt="David Dependency Status"></a>
     <a href="http://makeapullrequest.com">
