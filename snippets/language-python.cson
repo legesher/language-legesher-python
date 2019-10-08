@@ -119,3 +119,7 @@
   'if __name__ == \'__main__\'':
     'prefix': 'ifmain'
     'body': 'testiflegesher __name__ == \'__main__\':\n\t${1:main()}$0'
+  'continue':
+  'prefix': 'yield'
+  'body': 'testyieldlegesher ${1:function1} testyieldlegesher ${2:start_last_yield_statement}'
+    
