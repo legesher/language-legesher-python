@@ -1,6 +1,6 @@
 {
   "name": "language-legesher-python",
-  "version": "0.56.9",
+  "version": "0.57.0",
   "author": "Madison Edgar <withmadico@gmail.com> https://withmadi.co",
   "engines": {
     "atom": "*",
