@@ -34,6 +34,15 @@
       "contributions": [
         "marketing"
       ]
+    },
+    {
+      "login": "rajitha1998",
+      "name": "Rajitha Warusavitarana",
+      "avatar_url": "https://avatars0.githubusercontent.com/u/36359382?v=4",
+      "profile": "https://www.linkedin.com/in/rajitha-warusavitarana-858a11156/",
+      "contributions": [
+        "code"
+      ]
     }
   ],
   "contributorsPerLine": 7
