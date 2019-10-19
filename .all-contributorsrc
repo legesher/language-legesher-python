@@ -1,0 +1,67 @@
+{
+  "projectName": "language-legesher-python",
+  "projectOwner": "madiedgar",
+  "repoType": "github",
+  "repoHost": "https://github.com",
+  "files": [
+    "README.md"
+  ],
+  "types": {
+    "marketing": {
+      "symbol": "💌",
+      "description": "Marketing - People who help in marketing the repo/project"
+    }
+  },
+  "imageSize": 100,
+  "commit": true,
+  "commitConvention": "atom",
+  "contributors": [
+    {
+      "login": "madiedgar",
+      "name": "Madison (Pfaff) Edgar",
+      "avatar_url": "https://avatars0.githubusercontent.com/u/7844510?v=4",
+      "profile": "http://withmadi.co",
+      "contributions": [
+        "projectManagement",
+        "code"
+      ]
+    },
+    {
+      "login": "sdesani",
+      "name": "Santosh Desani",
+      "avatar_url": "https://avatars3.githubusercontent.com/u/10603196?v=4",
+      "profile": "https://github.com/sdesani",
+      "contributions": [
+        "marketing"
+      ]
+    },
+    {
+      "login": "rajitha1998",
+      "name": "Rajitha Warusavitarana",
+      "avatar_url": "https://avatars0.githubusercontent.com/u/36359382?v=4",
+      "profile": "https://www.linkedin.com/in/rajitha-warusavitarana-858a11156/",
+      "contributions": [
+        "code"
+      ]
+    },
+    {
+      "login": "korolr",
+      "name": "Alexsey Ramzaev",
+      "avatar_url": "https://avatars0.githubusercontent.com/u/11715165?v=4",
+      "profile": "https://Korolr.me/",
+      "contributions": [
+        "doc"
+      ]
+    },
+    {
+      "login": "Aakash1822",
+      "name": "Aakash Singh",
+      "avatar_url": "https://avatars3.githubusercontent.com/u/30810386?v=4",
+      "profile": "https://staticai.blogspot.com",
+      "contributions": [
+        "ideas"
+      ]
+    }
+  ],
+  "contributorsPerLine": 7
+}
