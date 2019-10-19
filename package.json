@@ -26,6 +26,7 @@
     "tree-sitter-legesher-python": "^0.15.1"
   },
   "devDependencies": {
+    "all-contributors-cli": "^6.9.2",
     "coffeelint": "^2.1.0",
     "electron-rebuild": "^1.8.6"
   }
