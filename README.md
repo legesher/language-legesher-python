@@ -175,20 +175,17 @@ A message from our [founder, Madi](https://www.instagram.com/withmadico/):
 Meet our [community](https://github.com/legesher/legesher/tree/master/community) (full of contributors, backers, sponsors, and supporters) that give a little piece of their heart to this project. Thank you so much. ([emoji key](https://allcontributors.org/docs/en/emoji-key))
 
 <!-- ALL-CONTRIBUTORS-LIST:START - Do not remove or modify this section -->
-<!-- prettier-ignore-start -->
-<!-- markdownlint-disable -->
+<!-- prettier-ignore -->
 <table>
   <tr>
-    <td align="center"><a href="http://withmadi.co"><img src="https://avatars0.githubusercontent.com/u/7844510?v=4" width="100px;" alt="Madison (Pfaff) Edgar"/><br /><sub><b>Madison (Pfaff) Edgar</b></sub></a><br /><a href="#projectManagement-madiedgar" title="Project Management">📆</a> <a href="https://github.com/madiedgar/language-legesher-python/commits?author=madiedgar" title="Code">💻</a></td>
+    <td align="center"><a href="http://withmadi.co"><img src="https://avatars0.githubusercontent.com/u/7844510?v=4" width="100px;" alt="Madison (Pfaff) Edgar"/><br /><sub><b>Madison (Pfaff) Edgar</b></sub></a><br /><a href="#projectManagement-madiedgar" title="Project Management">📆</a> <a href="https://github.com/legesher/language-legesher-python/commits?author=madiedgar" title="Code">💻</a></td>
     <td align="center"><a href="https://github.com/sdesani"><img src="https://avatars3.githubusercontent.com/u/10603196?v=4" width="100px;" alt="Santosh Desani"/><br /><sub><b>Santosh Desani</b></sub></a><br /><a href="#marketing-sdesani" title="Marketing - People who help in marketing the repo/project">💌</a></td>
-    <td align="center"><a href="https://www.linkedin.com/in/rajitha-warusavitarana-858a11156/"><img src="https://avatars0.githubusercontent.com/u/36359382?v=4" width="100px;" alt="Rajitha Warusavitarana"/><br /><sub><b>Rajitha Warusavitarana</b></sub></a><br /><a href="https://github.com/madiedgar/language-legesher-python/commits?author=rajitha1998" title="Code">💻</a></td>
-    <td align="center"><a href="https://Korolr.me/"><img src="https://avatars0.githubusercontent.com/u/11715165?v=4" width="100px;" alt="Alexsey Ramzaev"/><br /><sub><b>Alexsey Ramzaev</b></sub></a><br /><a href="https://github.com/madiedgar/language-legesher-python/commits?author=korolr" title="Documentation">📖</a></td>
+    <td align="center"><a href="https://www.linkedin.com/in/rajitha-warusavitarana-858a11156/"><img src="https://avatars0.githubusercontent.com/u/36359382?v=4" width="100px;" alt="Rajitha Warusavitarana"/><br /><sub><b>Rajitha Warusavitarana</b></sub></a><br /><a href="https://github.com/legesher/language-legesher-python/commits?author=rajitha1998" title="Code">💻</a></td>
+    <td align="center"><a href="https://Korolr.me/"><img src="https://avatars0.githubusercontent.com/u/11715165?v=4" width="100px;" alt="Alexsey Ramzaev"/><br /><sub><b>Alexsey Ramzaev</b></sub></a><br /><a href="https://github.com/legesher/language-legesher-python/commits?author=korolr" title="Documentation">📖</a></td>
     <td align="center"><a href="https://staticai.blogspot.com"><img src="https://avatars3.githubusercontent.com/u/30810386?v=4" width="100px;" alt="Aakash Singh"/><br /><sub><b>Aakash Singh</b></sub></a><br /><a href="#ideas-Aakash1822" title="Ideas, Planning, & Feedback">🤔</a></td>
+    <td align="center"><a href="https://github.com/imgovind"><img src="https://avatars0.githubusercontent.com/u/4269318?v=4" width="100px;" alt="Govindarajan Panneerselvam"/><br /><sub><b>Govindarajan Panneerselvam</b></sub></a><br /><a href="https://github.com/legesher/language-legesher-python/commits?author=imgovind" title="Documentation">📖</a></td>
   </tr>
 </table>
-
-<!-- markdownlint-enable -->
-<!-- prettier-ignore-end -->
 
 <!-- ALL-CONTRIBUTORS-LIST:END -->
 
