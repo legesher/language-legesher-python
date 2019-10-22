@@ -48,7 +48,7 @@ Here are some important and helpful resources for **Legesher**:
   - Use the `Legesher` channel for questions about Legesher
   - Use the `tutorials` channel for questions about Legesher, Github, or Programming tutorials
   - There are many other channels available, check the channel list
-- [Current Project Status](https://github.com/legesher/legesher) (we're keeping everything on Github for the time being)
+- [Current Project Status](https://github.com/legesher/language-legesher-python) (we're keeping everything on Github for the time being)
 - [Official Legesher Website](https://legesher.io)
 - [Legesher Documentation Website](https://legesher.readme.io/docs)
 
@@ -218,11 +218,11 @@ _See [conventionalcommits.org](https://conventionalcommits.org/) for more detail
 
 ### Bug Reports :bug:
 
-Answer [these questions](https://github.com/legesher/Legesher/blob/master/.github/ISSUE_TEMPLATE/bug_report.md) when reporting a bug.
+Answer [these questions](https://github.com/legesher/language-legesher-python/blob/master/.github/ISSUE_TEMPLATE/bug_report.md) when reporting a bug.
 
 ### Feature or Enhancement Suggestions 🚀
 
-Answer [these questions](https://github.com/legesher/Legesher/blob/master/.github/ISSUE_TEMPLATE/feature_request.md) when suggesting a feature or enhancement.
+Answer [these questions](https://github.com/legesher/language-legesher-python/blob/master/.github/ISSUE_TEMPLATE/feature_request.md) when suggesting a feature or enhancement.
 
 ### Security Reports :police_car:
 
