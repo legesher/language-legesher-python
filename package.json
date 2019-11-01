@@ -3,7 +3,7 @@
   "version": "0.57.0",
   "author": "Madison Edgar <withmadico@gmail.com> https://withmadi.co",
   "engines": {
-    "atom": "*",
+    "atom": "1.39.1",
     "node": "*"
   },
   "description": "Python language support in Atom for the Legesher project",
