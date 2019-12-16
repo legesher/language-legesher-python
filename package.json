@@ -1,9 +1,13 @@
 {
   "name": "language-legesher-python",
   "version": "0.57.0",
+  "details": {
+    "language-python-version": "0.53.4",
+    "latest-commit": "d4a8e73a4ce35aa6aa877044c508899621adf040"
+  },
   "author": "Madison Edgar <withmadico@gmail.com> https://withmadi.co",
   "engines": {
-    "atom": "*",
+    "atom": "1.39.1",
     "node": "*"
   },
   "description": "Python language support in Atom for the Legesher project",
@@ -23,11 +27,21 @@
   },
   "dependencies": {
     "atom-grammar-test": "^0.6.4",
-    "tree-sitter-legesher-python": "^0.15.1"
+    "tree-sitter-legesher-python": "^0.15.2"
   },
   "devDependencies": {
-    "all-contributors-cli": "^6.9.2",
+    "@unibeautify/beautifier-black": "^0.1.1",
+    "@unibeautify/beautifier-js-beautify": "^0.4.0",
+    "@unibeautify/beautifier-prettier": "^0.9.0",
+    "@unibeautify/beautifier-prettydiff": "^0.6.0",
+    "@unibeautify/beautifier-yapf": "^0.3.0",
+    "@unibeautify/cli": "^0.5.1",
+    "all-contributors-cli": "^6.9.3",
     "coffeelint": "^2.1.0",
-    "electron-rebuild": "^1.8.6"
+    "electron-rebuild": "^1.8.6",
+    "js-beautify": "^1.10.2",
+    "prettier": "^1.18.2",
+    "prettydiff2": "^2.2.8",
+    "unibeautify-cli": "^0.2.1"
   }
 }

@@ -24,7 +24,7 @@
         <!--  <a href="https://github.com/legesher/language-legesher-python/graphs/contributors" alt="Contributors">
         <img src="https://img.shields.io/github/contributors/legesher/language-legesher-python?style=flat-square&color=f58977&labelColor=black" /></a> -->
     <a href="#the-community" alt="All Contributors">
-        <img src="https://img.shields.io/badge/all_contributors-6-black?style=flat-square&color=f58977&labelColor=black" /></a>
+        <img src="https://img.shields.io/badge/all_contributors-7-black?style=flat-square&color=f58977&labelColor=black" /></a>
     <a href="https://streamlabs.com/withmadico/tip" alt="Backers on Github">
         <img src="https://img.shields.io/badge/sponsors-4-black?style=flat-square&color=f58977&labelColor=black" /></a>
     <a href="https://instagram.com/withmadico" alt="Sponsors on Github">
@@ -175,7 +175,8 @@ A message from our [founder, Madi](https://www.instagram.com/withmadico/):
 Meet our [community](https://github.com/legesher/legesher/tree/master/community) (full of contributors, backers, sponsors, and supporters) that give a little piece of their heart to this project. Thank you so much. ([emoji key](https://allcontributors.org/docs/en/emoji-key))
 
 <!-- ALL-CONTRIBUTORS-LIST:START - Do not remove or modify this section -->
-<!-- prettier-ignore -->
+<!-- prettier-ignore-start -->
+<!-- markdownlint-disable -->
 <table>
   <tr>
     <td align="center"><a href="http://withmadi.co"><img src="https://avatars0.githubusercontent.com/u/7844510?v=4" width="100px;" alt="Madison (Pfaff) Edgar"/><br /><sub><b>Madison (Pfaff) Edgar</b></sub></a><br /><a href="#projectManagement-madiedgar" title="Project Management">📆</a> <a href="https://github.com/legesher/language-legesher-python/commits?author=madiedgar" title="Code">💻</a></td>
@@ -184,8 +185,12 @@ Meet our [community](https://github.com/legesher/legesher/tree/master/community)
     <td align="center"><a href="https://Korolr.me/"><img src="https://avatars0.githubusercontent.com/u/11715165?v=4" width="100px;" alt="Alexsey Ramzaev"/><br /><sub><b>Alexsey Ramzaev</b></sub></a><br /><a href="https://github.com/legesher/language-legesher-python/commits?author=korolr" title="Documentation">📖</a></td>
     <td align="center"><a href="https://staticai.blogspot.com"><img src="https://avatars3.githubusercontent.com/u/30810386?v=4" width="100px;" alt="Aakash Singh"/><br /><sub><b>Aakash Singh</b></sub></a><br /><a href="#ideas-Aakash1822" title="Ideas, Planning, & Feedback">🤔</a></td>
     <td align="center"><a href="https://github.com/imgovind"><img src="https://avatars0.githubusercontent.com/u/4269318?v=4" width="100px;" alt="Govindarajan Panneerselvam"/><br /><sub><b>Govindarajan Panneerselvam</b></sub></a><br /><a href="https://github.com/legesher/language-legesher-python/commits?author=imgovind" title="Documentation">📖</a></td>
+    <td align="center"><a href="http://www.irfansener.com"><img src="https://avatars3.githubusercontent.com/u/2094635?v=4" width="100px;" alt="İrfan Şener"/><br /><sub><b>İrfan Şener</b></sub></a><br /><a href="https://github.com/legesher/language-legesher-python/commits?author=irfansener" title="Documentation">📖</a></td>
   </tr>
 </table>
+
+<!-- markdownlint-enable -->
+<!-- prettier-ignore-end -->
 
 <!-- ALL-CONTRIBUTORS-LIST:END -->
 
