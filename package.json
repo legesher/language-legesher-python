@@ -1,6 +1,10 @@
 {
   "name": "language-legesher-python",
   "version": "0.57.0",
+  "details": {
+    "language-python-version": "0.53.4",
+    "latest-commit": "d4a8e73a4ce35aa6aa877044c508899621adf040"
+  },
   "author": "Madison Edgar <withmadico@gmail.com> https://withmadi.co",
   "engines": {
     "atom": "1.39.1",
