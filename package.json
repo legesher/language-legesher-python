@@ -7,7 +7,7 @@
   },
   "author": "Madison Edgar <withmadico@gmail.com> https://withmadi.co",
   "engines": {
-    "atom": "1.39.1",
+    "atom": "*",
     "node": "*"
   },
   "description": "Python language support in Atom for the Legesher project",
@@ -36,11 +36,11 @@
     "@unibeautify/beautifier-prettydiff": "^0.6.0",
     "@unibeautify/beautifier-yapf": "^0.3.0",
     "@unibeautify/cli": "^0.5.1",
-    "all-contributors-cli": "^6.9.3",
+    "all-contributors-cli": "^6.12.0",
     "coffeelint": "^2.1.0",
-    "electron-rebuild": "^1.8.6",
+    "electron-rebuild": "^1.8.8",
     "js-beautify": "^1.10.2",
-    "prettier": "^1.18.2",
+    "prettier": "^1.19.1",
     "prettydiff2": "^2.2.8",
     "unibeautify-cli": "^0.2.1"
   }
