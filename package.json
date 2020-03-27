@@ -27,7 +27,8 @@
   },
   "dependencies": {
     "atom-grammar-test": "^0.6.4",
-    "tree-sitter-legesher-python": "^0.15.2"
+    "tree-sitter-legesher-python": "^0.15.2",
+    "minimist": ">=1.2.2"
   },
   "devDependencies": {
     "@unibeautify/beautifier-black": "^0.1.1",
