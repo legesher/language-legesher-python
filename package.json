@@ -2,8 +2,8 @@
   "name": "language-legesher-python",
   "version": "0.58.2",
   "details": {
-    "language-python-version": "0.53.4",
-    "latest-commit": "681aba31aa2679e563b2a287769a367957d4479f"
+    "language-python-version": "0.53.5",
+    "latest-commit": "df7643256348c80d9cbc7438f99d5d8af82a7b23"
   },
   "author": "Madison Edgar <withmadico@gmail.com> https://withmadi.co",
   "engines": {
