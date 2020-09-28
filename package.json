@@ -3,7 +3,7 @@
   "version": "0.58.2",
   "details": {
     "language-python-version": "0.53.4",
-    "latest-commit": "d4a8e73a4ce35aa6aa877044c508899621adf040"
+    "latest-commit": "681aba31aa2679e563b2a287769a367957d4479f"
   },
   "author": "Madison Edgar <withmadico@gmail.com> https://withmadi.co",
   "engines": {
@@ -31,16 +31,16 @@
     "minimist": ">=1.2.2"
   },
   "devDependencies": {
-    "@unibeautify/beautifier-black": "^0.1.1",
+    "@unibeautify/beautifier-black": "^0.1.2",
     "@unibeautify/beautifier-js-beautify": "^0.4.0",
     "@unibeautify/beautifier-prettier": "^0.9.0",
     "@unibeautify/beautifier-prettydiff": "^0.6.0",
     "@unibeautify/beautifier-yapf": "^0.3.0",
     "@unibeautify/cli": "^0.5.1",
-    "all-contributors-cli": "^6.12.0",
+    "all-contributors-cli": "^6.17.4",
     "coffeelint": "^2.1.0",
-    "electron-rebuild": "^1.8.8",
-    "js-beautify": "^1.11.0",
+    "electron-rebuild": "^1.11.0",
+    "js-beautify": "^1.13.0",
     "prettier": "^1.19.1",
     "prettydiff2": "^2.2.8",
     "unibeautify-cli": "^0.2.1"
