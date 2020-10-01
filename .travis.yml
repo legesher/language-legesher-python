@@ -35,7 +35,7 @@ dist: trusty
 addons:
   apt:
     packages:
-    - build-essential
-    - fakeroot
-    - git
-    - libsecret-1-dev
+      - build-essential
+      - fakeroot
+      - git
+      - libsecret-1-dev
