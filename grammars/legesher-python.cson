@@ -848,7 +848,7 @@
   'generic_names':
     'match': '[A-Za-z_][A-Za-z0-9_]*'
   'illegal_names':
-    'match': '\\b(testandlegesher|testaslegesher|testassertlegesher|testbreaklegesher|testclasslegesher|testcontinuelegesher|testdeflegesher|testdellegesher|testeliflegesher|testelselegesher|testexceptlegesher|testexeclegesher|testfinallylegesher|testforlegesher|testfromlegesher|testgloballegesher|testiflegesher|testimportlegesher|testinlegesher|testislegesher|testlambdalegesher|testnonlocallegesher|testnotlegesher|testorlegesher|testpasslegesher|testprintlegesher|testraiselegesher|testreturnlegesher|testtrylegesher|testwhilelegesher|testwithlegesher|testyieldlegesher|testawaitlegesher)\\b'
+    'match': '\\b(testandlegesher|testaslegesher|testassertlegesher|testbreaklegesher|testclasslegesher|testcontinuelegesher|testdeflegesher|testdellegesher|testeliflegesher|testelselegesher|testexceptlegesher|testexeclegesher|testfinallylegesher|testforlegesher|testfromlegesher|testgloballegesher|testiflegesher|testimportlegesher|testinlegesher|testislegesher|testlambdalegesher|testnonlocallegesher|testnotlegesher|testorlegesher|testpasslegesher|testprintlegesher|testraiselegesher|testreturnlegesher|testtrylegesher|testwhilelegesher|testwithlegesher|testyieldlegesher|testawaitlegesher|testasynclegesher)\\b'
     'name': 'invalid.illegal.name.python.legesher'
   'keyword_arguments':
     'begin': '\\b([a-zA-Z_][a-zA-Z_0-9]*)\\s*(=)(?!=)'
