@@ -73,18 +73,21 @@ scopes:
   'interpolation > "}"': 'punctuation.section.embedded'
 
   'class_definition > identifier': 'entity.name.type.class'
-  'function_definition > identifier': 'entity.name.function'
+  'function_definition > identifier': 'entity.name.function.definition'
   'call > identifier:nth-child(0)': [
     {match: '^(testabslegesher|testalllegesher|testanylegesher|testasciilegesher|testbinlegesher|testboollegesher|testbreakpointlegesher|testbytearraylegesher|testbyteslegesher|testcallablelegesher|testchrlegesher|testclassmethodlegesher|testcompilelegesher|testcomplexlegesher|testdelattrlegesher|testdictlegesher|testdirlegesher|testdivmodlegesher|testenumeratelegesher|testevallegesher|testexeclegesher|testfilterlegesher|testfloatlegesher|testformatlegesher|testfrozensetlegesher|testgetattrlegesher|testglobalslegesher|testhasattrlegesher|testhashlegesher|testhelplegesher|testhexlegesher|testidlegesher|testinputlegesher|testintlegesher|testisinstancelegesher|testissubclasslegesher|testiterlegesher|testlenlegesher|testlistlegesher|testlocalslegesher|testmaplegesher|testmaxlegesher|testmemoryviewlegesher|testminlegesher|testnextlegesher|testobjectlegesher|testoctlegesher|testopenlegesher|testordlegesher|testpowlegesher|testprintlegesher|testpropertylegesher|testrangelegesher|testreprlegesher|testreversedlegesher|testroundlegesher|testsetlegesher|testsetattrlegesher|testslicelegesher|testsortedlegesher|teststaticmethodlegesher|teststrlegesher|testsumlegesher|testsuperlegesher|testtuplelegesher|testtypelegesher|testvarslegesher|testziplegesher|__testimportlegesher__)$',
-    scopes: 'support.function'},
-    'entity.name.function'
+    scopes: 'support.function.call'},
+    {match: '^[A-Z]', scopes: 'support.type.contructor'}
+    'entity.name.function.call'
    ]
   'call > attribute > identifier:nth-child(2)': 'entity.name.function'
 
-  'identifier':
+  'identifier': [
     {match:
       '^(BaseException|Exception|TypeError|StopAsyncIteration|StopIteration|ImportError|ModuleNotFoundError|OSError|ConnectionError|BrokenPipeError|ConnectionAbortedError|ConnectionRefusedError|ConnectionResetError|BlockingIOError|ChildProcessError|FileExistsError|FileNotFoundError|IsADirectoryError|NotADirectoryError|InterruptedError|PermissionError|ProcessLookupError|TimeoutError|EOFError|RuntimeError|RecursionError|NotImplementedError|NameError|UnboundLocalError|AttributeError|SyntaxError|IndentationError|TabError|LookupError|IndexError|KeyError|ValueError|UnicodeError|UnicodeEncodeError|UnicodeDecodeError|UnicodeTranslateError|AssertionError|ArithmeticError|FloatingPointError|OverflowError|ZeroDivisionError|SystemError|ReferenceError|BufferError|MemoryError|Warning|UserWarning|DeprecationWarning|PendingDeprecationWarning|SyntaxWarning|RuntimeWarning|FutureWarning|ImportWarning|UnicodeWarning|BytesWarning|ResourceWarning|GeneratorExit|SystemExit|KeyboardInterrupt)$'
-    scopes: 'support.type.exception'}
+    scopes: 'support.type.exception'},
+    {match: '^(self)', scopes: 'entity.name.variable.self'}
+  ]
 
   'attribute > identifier:nth-child(2)': 'variable.other.object.property'
 
@@ -115,6 +118,10 @@ scopes:
   'parameters > dictionary_splat > identifier': 'variable.parameter.function'
   'default_parameter > identifier:nth-child(0)': 'variable.parameter.function'
   'keyword_argument > identifier:nth-child(0)': 'variable.parameter.function'
+  'lambda_parameters > identifier': 'variable.parameter.function'
+  'typed_parameter > identifier': 'variable.parameter.function'
+
+  'argument_list': 'meta.method-call.python.legesher'
 
   '"testiflegesher"': 'keyword.control'
   '"testelselegesher"': 'keyword.control'
@@ -177,3 +184,12 @@ scopes:
   '"testorlegesher"': 'keyword.operator.logical.python.legesher'
   '"testnotlegesher"': 'keyword.operator.logical.python.legesher'
   '"testislegesher"': 'keyword.operator.logical.python.legesher'
+  '"->"': 'keyword.control.return'
+
+  '"["': 'punctuation.definition.begin.bracket.square'
+  '"]"': 'punctuation.definition.end.bracket.square'
+  '","': 'punctuation.separator.delimiter'
+  '"{"': 'punctuation.section.block.begin.bracket.curly'
+  '"}"': 'punctuation.section.block.end.bracket.curly'
+  '"("': 'punctuation.section.parens.begin.bracket.round'
+  '")"': 'punctuation.section.parens.end.bracket.round'
