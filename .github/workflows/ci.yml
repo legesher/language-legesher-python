@@ -34,7 +34,7 @@ jobs:
       - name: Install Visual Studio 2015 on Windows
         if: ${{ contains(matrix.os, 'windows') }}
         run: |
-          choco install visualcpp-build-tools --version=14.0.25420.1 --ignore-dependencies -y --params "'/IncludeRequired'"
+          choco install visualcpp-build-tools --version=14.0.25420.1 --ignore-dependencies -y --params "'/IncludeRequired'" --install-arguments="'/l*v c:\visualcpp-build-tools_msi_install.log'"
           echo ::set-env name=VCTargetsPath::'C:\Program Files (x86)\MSBuild\Microsoft.Cpp\v4.0\v140'
 
       - name: Install dependencies
