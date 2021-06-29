@@ -3,7 +3,7 @@
   "version": "0.58.3",
   "details": {
     "language-python-version": "0.53.5",
-    "latest-commit": "df7643256348c80d9cbc7438f99d5d8af82a7b23"
+    "latest-commit": "6d7026e935fb2ff5df368c4e87df7caffaef8103"
   },
   "author": "Madison Edgar <withmadico@gmail.com> https://withmadi.co",
   "engines": {
@@ -29,7 +29,7 @@
     "atom-grammar-test": "^0.6.4",
     "minimist": ">=1.2.2",
     "tree-sitter-cli": "^0.17.2",
-    "tree-sitter-legesher-python": "^0.15.4"
+    "tree-sitter-legesher-python": "^0.19.0"
   },
   "devDependencies": {
     "@unibeautify/beautifier-black": "^0.1.2",

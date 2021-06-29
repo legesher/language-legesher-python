@@ -750,3 +750,10 @@ describe "Python grammar", ->
       expect(tokens[13]).toEqual value: ')', scopes: ['source.python.legesher', 'string.quoted.double.single-line.sql.python.legesher', 'meta.embedded.sql', 'punctuation.definition.section.bracket.round.end.sql']
       expect(tokens[15]).toEqual value: '"', scopes: ['source.python.legesher', 'string.quoted.double.single-line.sql.python.legesher', 'punctuation.definition.string.end.python.legesher']
       expect(tokens[17]).toEqual value: '%', scopes: ['source.python.legesher', 'keyword.operator.arithmetic.python.legesher']
+
+     it "recognizes DELETE as an HTTP method", ->
+      {tokens} = grammar.tokenizeLine('"DELETE /api/v1/endpoint"')
+
+      expect(tokens[0]).toEqual value: '"', scopes: ['source.python.legesher', 'string.quoted.double.single-line.python.legesher', 'punctuation.definition.string.begin.python.legesher']
+      expect(tokens[1]).toEqual value: 'DELETE /api/v1/endpoint', scopes: ['source.python.legesher', 'string.quoted.double.single-line.python.legesher']
+      expect(tokens[2]).toEqual value: '"', scopes: ['source.python.legesher', 'string.quoted.double.single-line.python.legesher', 'punctuation.definition.string.end.python.legesher']
