@@ -27,7 +27,7 @@
   },
   "dependencies": {
     "atom-grammar-test": "^0.6.4",
-    "minimist": ">=1.2.2",
+    "minimist": ">=1.2.6",
     "tree-sitter-cli": "^0.17.2",
     "tree-sitter-legesher-python": "^0.19.2"
   },
