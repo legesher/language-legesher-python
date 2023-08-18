@@ -27,7 +27,7 @@ jobs:
             'C:/Program Files (x86)/MSBuild/Microsoft.Cpp/v4.0/v140'
           key: ${{ runner.os }}-${{ matrix.atom_channel }}-${{ hashFiles('package.json') }}
 
-      - uses: UziTech/action-setup-atom@v1
+      - uses: UziTech/action-setup-atom@v3
         with:
           channel: ${{ matrix.atom_channel }}
 
