@@ -40,7 +40,7 @@
     "@unibeautify/cli": "^0.5.1",
     "all-contributors-cli": "^6.17.4",
     "coffeelint": "^1.10.0",
-    "electron-rebuild": "^1.11.0",
+    "electron-rebuild": "^3.2.9",
     "js-beautify": "^1.13.0",
     "prettier": "^1.19.1",
     "prettydiff2": "^2.2.8",
