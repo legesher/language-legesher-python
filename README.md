@@ -1,7 +1,7 @@
 > [!NOTE]
 > **This repository is part of the Legesher ecosystem.** A major update consolidating and improving this functionality is in active development and will be released as open source in 2026.
 >
-> This was the Atom-editor language package. IDE integration has since consolidated into the Legesher Language Server (LSP), which works across modern editors — see **[Legesher/legesher → `libs/language-server/`](https://github.com/Legesher/legesher/tree/main/libs/language-server)**. Follow progress at **[legesher.io](https://legesher.io)** or join the community on Discord.
+> This was the Atom-editor language package. IDE integration has since consolidated into the Legesher Language Server (LSP), which works across modern editors — see **[Legesher/legesher → `libs/language-server/`](https://github.com/Legesher/legesher/tree/main/libs/language-server)**. Follow progress at **[legesher.io](https://legesher.io)** or join the community on **[Slack](https://legesher.io/go/slack)**.
 >
 > This repo's current state is pinned as the legacy release for reference. See the legacy release and the All Contributors table for full contributor credits.
 
